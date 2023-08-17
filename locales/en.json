@@ -1,0 +1,13 @@
+{
+  "Navigation": {
+    "russian": "russian",
+    "english": "english",
+    "search": "Search",
+
+    "profile": "Profile",
+
+    "logIn": "log in",
+    "logOut": "Log Out",
+    "signUp": "Sign up"
+  }
+}

@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+/* navigation   */
+
+.nav-link_active {
+  @apply px-4 h-full flex bg-slate-300 items-center dark:bg-slate-900 hover:bg-blue-500  underline-offset-4 font-semibold text-blue-700 hover:text-slate-100 underline
+}
+.nav-link {
+ @apply px-3 transition duration-100 h-full flex items-center hover:bg-blue-500 hover:underline underline-offset-4 decoration-slate-100 font-semibold text-blue-500 hover:text-slate-100
+}
+
+/* posts */
+
+.post {
+  @apply mb-3 text-blue-500 font-semibold hover:underline underline-offset-4
+}
+
+.post-search-input {
+  @apply py-1 px-3 rounded-full border-2 border-blue-500 focus:outline-none focus:ring focus:ring-violet-300
+}
+
+/* decrease value (priority of this styles) and now you can rewrite them in component */
+@layer components {
+  .post-search-btn {
+    @apply focus:outline-none focus:ring focus:ring-violet-300 transition ease-in-out delay-[30ms] border-2 border-blue-400 px-3 rounded-lg bg-blue-400 hover:bg-white hover:text-blue-400 hover:border-blue-500 text-white inline-flex items-center gap-3
+  }
+}
